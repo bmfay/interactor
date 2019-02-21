@@ -4,7 +4,7 @@ defmodule Interactor.Mixfile do
   def project do
     [app: :interactor,
      version: "0.1.0",
-     elixir: "~> 1.2",
+     elixir: "~> 1.5",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      source_url: "https://github.com/AgilionApps/interactor",
@@ -20,7 +20,7 @@ defmodule Interactor.Mixfile do
 
   defp deps do
     [
-      {:ecto, "~> 1.0 or ~> 2.0", optional: true},
+      {:ecto, "~> 3.0"},
       {:earmark, "~> 0.2.0", only: :dev},
       {:ex_doc, "~> 0.12", only: :dev}
     ]
